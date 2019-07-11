@@ -12,6 +12,10 @@ var currentMatch = [];
 var confirmButton;
 
 function startGame(){
+	if(seed != null){
+		randomSeed(seed);
+	}
+	
 	for(var i = 0; i < playerOneChars.length; i++){
 		playerOneTeam.push(playerOneChars[i].value());
 	}
