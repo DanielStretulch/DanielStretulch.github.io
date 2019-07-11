@@ -4,7 +4,7 @@ var playerOne;
 var playerTwo;
 var playerOneChars = [];
 var playerTwoChars = [];
-var playerTypes = "Select One:,Starter,Linker,Ender,Mixed,Ten";
+var playerTypes = "Select One:,Two Characters,Three Characters,Four Characters,Five Characters,Ten Characters";
 var names = "Select One:,Grave,Jaina,Geiger,Arg,Setsuki,Valerie,Rook,Midori,Lum,DeGrey"
 var splitNames;
 var splitPlayerTypes;
@@ -88,19 +88,19 @@ function SetNumberChars(player, number){
 function UpdatePlayers(){
 	print("Updating Players")
 	switch(playerOne.value()){
-		case 'Starter':
+		case 'Two Characters':
 			SetNumberChars(0,2);
 			break;
-		case 'Linker':
+		case 'Three Characters':
 			SetNumberChars(0,3);
 			break;
-		case 'Ender':
+		case 'Four Characters':
 			SetNumberChars(0,4);
 			break;
-		case 'Mixed':
-			SetNumberChars(0,3);
+		case 'Five Characters':
+			SetNumberChars(0,5);
 			break;
-		case 'Ten':
+		case 'Ten Characters':
 			SetNumberChars(0,10);
 			break;
 		default:
@@ -109,23 +109,23 @@ function UpdatePlayers(){
 	}
 
 	switch(playerTwo.value()){
-		case 'Starter':
-			SetNumberChars(1,2);
+		case 'Two Characters':
+			SetNumberChars(0,2);
 			break;
-		case 'Linker':
-			SetNumberChars(1,3);
+		case 'Three Characters':
+			SetNumberChars(0,3);
 			break;
-		case 'Ender':
-			SetNumberChars(1,4);
+		case 'Four Characters':
+			SetNumberChars(0,4);
 			break;
-		case 'Mixed':
-			SetNumberChars(1,3);
+		case 'Five Characters':
+			SetNumberChars(0,5);
 			break;
-		case 'Ten':
-			SetNumberChars(1,10);
+		case 'Ten Characters':
+			SetNumberChars(0,10);
 			break;
 		default:
-			SetNumberChars(1,0);
+			SetNumberChars(0,0);
 			break;
 	}
 }
