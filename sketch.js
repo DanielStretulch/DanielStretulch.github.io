@@ -110,22 +110,22 @@ function UpdatePlayers(){
 
 	switch(playerTwo.value()){
 		case 'Two Characters':
-			SetNumberChars(0,2);
+			SetNumberChars(1,2);
 			break;
 		case 'Three Characters':
-			SetNumberChars(0,3);
+			SetNumberChars(1,3);
 			break;
 		case 'Four Characters':
-			SetNumberChars(0,4);
+			SetNumberChars(1,4);
 			break;
 		case 'Five Characters':
-			SetNumberChars(0,5);
+			SetNumberChars(1,5);
 			break;
 		case 'Ten Characters':
-			SetNumberChars(0,10);
+			SetNumberChars(1,10);
 			break;
 		default:
-			SetNumberChars(0,0);
+			SetNumberChars(1,0);
 			break;
 	}
 }
