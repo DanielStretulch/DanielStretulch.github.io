@@ -8,14 +8,9 @@ var playerTypes = "Select One:,Two Characters,Three Characters,Four Characters,F
 var names = "Select One:,Grave,Jaina,Geiger,Arg,Setsuki,Valerie,Rook,Midori,Lum,DeGrey"
 var splitNames;
 var splitPlayerTypes;
-var seedInput;
-var seed = null;
 function setup(){
 	splitNames = split(names, ",");
-	splitPlayerTypes = split(playerTypes, ",");
-	
-	seedInput = createInput('Seed?');
-	seedInput.changed(seedChanged);
+	splitPlayerTypes = split(playerTypes, ",")
 
 
 	divs.push(createDiv('Team 1'));
@@ -49,14 +44,6 @@ function PlayerSelect(){
 	}
 	player.changed(UpdatePlayers);
 	return player;
-}
-
-function seedChanged(){
-	if(this.value() != ""){
-		seed = int(this.value);
-	}else{
-		seed = null;
-	}
 }
 
 function CharacterSelect(player){
