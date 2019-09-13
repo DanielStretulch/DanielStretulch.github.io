@@ -68,7 +68,7 @@ function addMatch(){
 	charTwo = random(playerTwoTeamRemaining);
 	print(charOne + " vs. " + charTwo)
 
-	var c = createDiv("round 1: "); 
+	var c = createDiv(""); 
 	currentMatch.push(c);
 
 	var temp1 = createSpan(charOne + " vs. " + charTwo);
