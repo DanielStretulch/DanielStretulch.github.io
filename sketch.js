@@ -8,6 +8,7 @@ var playerTypes = "Three Characters,Two Characters,Four Characters,Five Characte
 var names = "Select One:,Grave,Jaina,Geiger,Arg,Setsuki,Valerie,Rook,Midori,Lum,DeGrey,Quince,Onimaru,BBB,Troq,Menelker,Perse,Gloria,Gwen,Vendetta,Zane"
 var splitNames;
 var splitPlayerTypes;
+var seed = 0;
 function setup(){
 	splitNames = split(names, ",");
 	splitPlayerTypes = split(playerTypes, ",")
@@ -30,7 +31,6 @@ function setup(){
 
 	button = createButton('START GAME');
 	button.mousePressed(startGame);
-	button.hide();
 }
 
 function draw(){
