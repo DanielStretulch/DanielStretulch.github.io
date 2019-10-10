@@ -32,6 +32,11 @@ function startGame(){
 		divs[i].remove();
 		divs.pop();
 	}
+	
+	for(var i=seedBoxes.length-1; i>=0; i--){
+		seedBoxes[i].remove();
+		seedBoxes.pop();
+	}
 
 	for(var i=playerOneChars.length-1; i>=0; i--){
 		playerOneChars[i].remove();
