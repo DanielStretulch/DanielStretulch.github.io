@@ -4,7 +4,7 @@ var playerOne;
 var playerTwo;
 var playerOneChars = [];
 var playerTwoChars = [];
-var playerTypes = "Select One:,Two Characters,Three Characters,Four Characters,Five Characters,Ten Characters";
+var playerTypes = "Three Characters,Two Characters,Four Characters,Five Characters,Ten Characters";
 var names = "Select One:,Grave,Jaina,Geiger,Arg,Setsuki,Valerie,Rook,Midori,Lum,DeGrey,Quince,Onimaru,BBB,Troq,Menelker,Perse,Gloria,Gwen,Vendetta,Zane"
 var splitNames;
 var splitPlayerTypes;
