@@ -12,7 +12,10 @@ var currentMatch = [];
 var confirmButton;
 
 function startGame(){
-	if(seed != 0){
+	try{
+		seed = parseInt(seedBoxes.text);
+	}
+	if(seed != '0'){
 		randomSeed(seed);
 	}
 	for(var i = 0; i < playerOneChars.length; i++){
