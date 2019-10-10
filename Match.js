@@ -13,7 +13,7 @@ var confirmButton;
 
 function startGame(){
 	try{
-		seed = parseInt(seedBoxes.text);
+		seed = parseInt(seedBoxes[1].value());
 	}catch{
 		seed = 0;
 	}
