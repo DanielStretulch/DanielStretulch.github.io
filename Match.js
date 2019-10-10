@@ -14,8 +14,10 @@ var confirmButton;
 function startGame(){
 	try{
 		seed = parseInt(seedBoxes.text);
+	}catch{
+		seed = 0;
 	}
-	if(seed != '0'){
+	if(seed != 0){
 		randomSeed(seed);
 	}
 	for(var i = 0; i < playerOneChars.length; i++){
