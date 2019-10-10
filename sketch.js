@@ -1,6 +1,6 @@
 var button;
 var divs = [];
-var seed = [];
+var seedBoxes = [];
 var playerOne;
 var playerTwo;
 var playerOneChars = [];
@@ -29,8 +29,8 @@ function setup(){
 
 	divs.push(createDiv('Characters'));
 	
-	seed.push(createDiv('Seed (Type 0 for no seed):'));
-	seed.push(createInput('0'));
+	seedBoxes.push(createDiv('Seed (Type 0 for no seed):'));
+	seedBoxes.push(createInput('0'));
 	
 
 
