@@ -1,10 +1,11 @@
 var button;
 var divs = [];
+var seed = [];
 var playerOne;
 var playerTwo;
 var playerOneChars = [];
 var playerTwoChars = [];
-var playerTypes = "Three Characters,Two Characters,Four Characters,Five Characters,Ten Characters";
+var playerTypes = "Select One:,Three Characters,Two Characters,Four Characters,Five Characters,Ten Characters";
 var names = "Select One:,Grave,Jaina,Geiger,Arg,Setsuki,Valerie,Rook,Midori,Lum,DeGrey,Quince,Onimaru,BBB,Troq,Menelker,Perse,Gloria,Gwen,Vendetta,Zane"
 var splitNames;
 var splitPlayerTypes;
@@ -27,10 +28,15 @@ function setup(){
 	playerTwo.parent(divs[3]);
 
 	divs.push(createDiv('Characters'));
+	
+	seed.push(createDiv('Seed (Type 0 for no seed):'));
+	seed.push(createInput('0'));
+	
 
 
 	button = createButton('START GAME');
 	button.mousePressed(startGame);
+	button.hide();
 }
 
 function draw(){
